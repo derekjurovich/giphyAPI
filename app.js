@@ -9,8 +9,8 @@ var search;
  $('#subButton').click(function() {
       search = $('#inputText').val();
       search = search.replace(/ /g, "+");
+      $(".gifList").empty();
       getGiphy(search);
-      $("gifList").empty();
     });
 
 
